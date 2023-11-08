@@ -3,6 +3,7 @@ FROM golang:alpine as build
 ARG GIT_TAG=v1.0.1
 
 ENV CGO_ENABLED=0
+ENV GO111MODULE=off
 
 WORKDIR /go/src/github.com/mailhog/MailHog
 
